@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini OS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="window">
+    <h1>Mini OS</h1>
+    <div class="nav">
+      <input type="radio" id="tab-weather" name="tab" checked>
+      <label for="tab-weather">🌤️ Weather</label>
+
+      <input type="radio" id="tab-homeworks" name="tab">
+      <label for="tab-homeworks">📚 Homeworks</label>
+
+      <input type="radio" id="tab-notes" name="tab">
+      <label for="tab-notes">📝 Notes</label>
+    </div>
+
+    <div class="content">
+      <section class="panel weather">
+        <h2>Weather</h2>
+        <p><strong>Location:</strong> Medellín</p>
+        <p><strong>Temperature:</strong> 25°C</p>
+        <p><strong>Condition:</strong> Partly Cloudy</p>
+      </section>
+
+      <section class="panel homeworks">
+        <h2>Homeworks</h2>
+        <ul>
+          <li>📘 Math: Linear Algebra (Due: June 15)</li>
+          <li>📕 Software Eng: Requirements doc</li>
+          <li>📗 Networks: Final quiz</li>
+        </ul>
+      </section>
+
+      <section class="panel notes">
+        <h2>Notes</h2>
+        <p><strong>Idea:</strong> Build a weather app using OpenWeather API</p>
+        <p><strong>Reminder:</strong> Finish the portfolio by next week!</p>
+        <p><strong>Meeting:</strong> Friday at 10:00 AM with project team</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
