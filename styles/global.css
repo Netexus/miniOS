@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1e1e2f;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.window {
+  width: 90%;
+  max-width: 600px;
+  background: #2c2c40;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.nav input[type="radio"] {
+  display: none;
+}
+
+.nav label {
+  background: #444;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background 0.3s;
+}
+
+.nav label:hover {
+  background: #666;
+}
+
+.nav input#tab-weather:checked ~ .content .weather,
+.nav input#tab-homeworks:checked ~ .content .homeworks,
+.nav input#tab-notes:checked ~ .content .notes {
+  display: block;
+}
+
+.panel {
+  display: none;
+  background: #3c3c50;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
